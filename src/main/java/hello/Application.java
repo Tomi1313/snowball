@@ -123,9 +123,9 @@ public class Application {
   public String index(@RequestBody ArenaUpdate arenaUpdate) {
     System.out.println(arenaUpdate);
     writeCommittedStream.send(arenaUpdate.arena);
-    //String[] commands = new String[]{"T", "T", "T","T", "F", "R", "L", "T", "T", "T", "T","T" ,"T", "T", "T","T", "T", "T","T" ,"T", "T", "T","T", "T", "T","T" ,"T"};
-    //int i = new Random().nextInt(20);
-    return "T";
+    String[] commands = new String[]{"T", "T", "T","T", "F", "R", "L", "T", "T", "T", "T","T" ,"T", "T", "T","T", "T", "T","T" ,"T", "T","T" ,"T", "T", "T","T", "T", "T","T" ,"T", "T","T" ,"T", "T", "T","T", "T", "T","T" ,"T", "T","T" ,"T", "T", "T","T", "T", "T","T" ,"T", "T","T" ,"T", "T", "T","T", "T", "T","T" ,"T"};
+    int i = new Random().nextInt(60);
+    return commands[i];
   }
 
 }
