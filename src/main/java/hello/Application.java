@@ -125,7 +125,7 @@ public class Application {
     writeCommittedStream.send(arenaUpdate.arena);
     String[] commands = new String[]{"T", "T", "T","T", "F", "R", "L", "T", "T", "T", "T","T" ,"T", "T", "T","T", "T", "T","T" ,"T", "T","T" ,"T", "T", "T","T", "T", "T","T" ,"T", "T","T" ,"T", "T", "T","T", "T", "T","T" ,"T", "T","T" ,"T", "T", "T","T", "T", "T","T" ,"T", "T","T" ,"T", "T", "T","T", "T", "T","T" ,"T"};
     int i = new Random().nextInt(60);
-    return commands[i];
+    return "T";
   }
 
 }
