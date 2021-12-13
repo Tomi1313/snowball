@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: $SAMPLE-deployment
   labels:
-    app: $SAMPLE-app
+    app: $SAMPLE-app    
 spec:
   replicas: 1
   selector:
@@ -20,3 +20,7 @@ spec:
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
+        env:
+        - name: SPRING_PROFILES_ACTIVE
+          value: prod
+
